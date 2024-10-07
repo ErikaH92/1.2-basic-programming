@@ -2,16 +2,10 @@
 //This will have two codes for the programming homework. 
 
 #include <iostream>
-#include <iomanip>
-#include <string>
 
-const double town_distance = 23.5;
+using namespace std;
 
-const double highway_distance = 28.9; 
 
-const double number_of_gallon;
-
-const double distance;
 
 
 
@@ -22,22 +16,46 @@ int main()
 
 {
 
-    distance = number_of_gallon * town_distance;
+    
+    char place;
 
-    std::cout << "Hello World!\n";
+    double gallon_of_gas;
+
+    double distance;
+
+   cout << "If you are driving in town enter T, if you are driving on highway enter H \n"; 
+    
+   cin>> place;
+
+   cout << "How many gallons of gas do you have in your car? \n"; "Your gas tank has a max capacity of 20-gallon \n";
+
+   cin >> gallon_of_gas; 
+
+   if
+       (place == 'T') {
+
+       distance = gallon_of_gas * 23.5;
+
+       cout << "The distance you could drive in town is " << distance << " miles on " << gallon_of_gas << " gallons of gas. ";
+   }
+   
+   else if 
+
+       (place == 'H')
+   {
+       distance = gallon_of_gas * 28.9;
+
+       cout << "The distace you could drive on the highway is " << distance << " miles on " << gallon_of_gas << "gallons of gas. ";
+   }
+
+   else
+   {
+       cout << "Can only enter T or H \n";
+   }
 
 
-    return 0;
+return 0;
 }
 
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
