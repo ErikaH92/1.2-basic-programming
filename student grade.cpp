@@ -1,12 +1,35 @@
 // student grade.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//This will have two codes for the programming homework. 
 
 #include <iostream>
+#include <iomanip>
+#include <string>
+
+const double town_distance = 23.5;
+
+const double highway_distance = 28.9; 
+
+const double number_of_gallon;
+
+const double distance;
+
+
+
+
+
 
 int main()
+
 {
+
+    distance = number_of_gallon * town_distance;
+
     std::cout << "Hello World!\n";
+
+
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
