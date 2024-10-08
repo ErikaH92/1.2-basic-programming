@@ -20,8 +20,9 @@ int main()
 
     cin >> number_of_customer;
 
-  cout << "How many customers drink this amount of energy drink per week?\n";
+    cout << "Enter number of customer that consumes more than one or more energy drinks per week.\n";
 
+    cin >> energy_taken;
   
   return 0;
 
