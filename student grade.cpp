@@ -8,7 +8,6 @@ using namespace std;
 int main()
 {
   
-
     int number_of_customer = 0;
     int energy_taken = 0;
     double citrus_preference = 0.0;
@@ -22,7 +21,6 @@ int main()
         if (number_of_customer > 0) {
             cout << "Out of the number of customers who surveyed how many of them drink one or more energy drink?\n";
  cin >> energy_taken;
-        }
 
 
         if (energy_taken <= number_of_customer) {
@@ -32,7 +30,6 @@ int main()
             cout << " out of " << energy_taken << " energy drinks taken " << citrus_preference << " prefer the flavored energy citrus drink. \n";
        
 
-        }
 
         else {
             cout << " energy taken cannot exceed the number of customers. \n";
